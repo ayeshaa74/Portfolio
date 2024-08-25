@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayesha Kaleri - Front End Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Matemasie&family=New+Amsterdam&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Matemasie&family=New+Amsterdam&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
-
     <div class="linebar">
         <i class="fa-solid fa-bars"></i>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#services">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
-    <div class="container">
+    <div class="container" id="home">
         <div class="intro">
             <h1>Ayesha Kaleri</h1>
             <h2>FRONT END DEVELOPER</h2>
             <h3>HTML / CSS / JAVA</h3>
         </div>
     </div>
-    <div class="main-content">
+
+    <div class="main-content" id="about">
         <div class="about">
             <h4>ABOUT ME</h4>
             <p>I’m a Front-End Developer with expertise in HTML and CSS. I create beautiful, responsive websites and
@@ -38,61 +40,76 @@
                 amazing together!</p>
         </div>
     </div>
-    <div class="hero-section">
-<div class="service">
-    <h5>Services</h5>
-    <h6>Skill-Set</h6>
-</div>
-<div class="main-container">
-    <div class="box">
-        <h1>Responsive Web Design</h1>
-        <p>Create websites that look and function perfectly on any device, from mobile phones to desktops.</p>
-    </div>
-    <div class="box">
-        <h1>Website Optimization</h1>
-        <p>Improve website performance and load times by optimizing code, images, and resources for a faster user experience.</p>
-    </div>
-    <div class="box">
-        <h1>Cross-Browser Compatibility</h1>
-        <p>Ensure websites work seamlessly across all major browsers, delivering a consistent experience to all users.</p>
-    </div>
-    <div class="box">
-    <h1>Custom CSS Animations</h1>
-    <p>Add interactivity and flair to websites using CSS animations, transitions, and effects to enhance user engagement.</p>
-    </div>
-    <div class="box">
-        <h1>Landing Page Design</h1>
-        <p>Design attractive and high-converting landing pages that focus on user-centered design and effective calls to action.</p>
-    </div>
-    <div class="box">
-        <h1>UI/UX Prototyping</h1>
-        <p>Build and design user-friendly interface prototypes that prioritize intuitive user experiences.</p>
-    </div>
-        </div>
-</div>
-<div class="footer">
-    <h1>Connect With Me</h1>
-    <div class="contact">
-        <a href="https://wa.me/03029699274" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ayesha-kaleri-49134a309/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/ayeshaa74" target="_blank">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.upwork.com/freelancers/~017e7fec563b44e86a" target="_blank">
-            <i class="fa-brands fa-upwork"></i>
-        </a>
-    </div>
-</div>
 
+    <div class="hero-section" id="services">
+        <div class="service">
+            <h5>Services</h5>
+            <h6>Skill-Set</h6>
+        </div>
+        <div class="main-container">
+            <div class="box">
+                <h1>Responsive Web Design</h1>
+                <p>Create websites that look and function perfectly on any device, from mobile phones to desktops.</p>
+            </div>
+            <div class="box">
+                <h1>Website Optimization</h1>
+                <p>Improve website performance and load times by optimizing code, images, and resources for a faster
+                    user experience.</p>
+            </div>
+            <div class="box">
+                <h1>Cross-Browser Compatibility</h1>
+                <p>Ensure websites work seamlessly across all major browsers, delivering a consistent experience to all
+                    users.</p>
+            </div>
+            <div class="box">
+                <h1>Custom CSS Animations</h1>
+                <p>Add interactivity and flair to websites using CSS animations, transitions, and effects to enhance
+                    user engagement.</p>
+            </div>
+            <div class="box">
+                <h1>Landing Page Design</h1>
+                <p>Design attractive and high-converting landing pages that focus on user-centered design and effective
+                    calls to action.</p>
+            </div>
+            <div class="box">
+                <h1>UI/UX Prototyping</h1>
+                <p>Build and design user-friendly interface prototypes that prioritize intuitive user experiences.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="contact">
+        <h1>Connect With Me</h1>
+        <div class="contact">
+            <a href="https://wa.me/03029699274" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ayesha-kaleri-49134a309/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ayeshaa74" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.upwork.com/freelancers/~017e7fec563b44e86a" target="_blank">
+                <i class="fa-brands fa-upwork"></i>
+            </a>
+        </div>
+    </div>
 
     <script>
         document.querySelector('.linebar').addEventListener('click', function () {
             this.classList.toggle('active');
         });
+        document.querySelectorAll('.linebar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
     </script>
 
 </body>
